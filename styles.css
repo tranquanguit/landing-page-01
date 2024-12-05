@@ -19,7 +19,7 @@
 .section__container {
   max-width: var(--max-width);
   margin: auto;
-  padding: 5rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .section__header {
@@ -67,11 +67,9 @@ body {
 }
 
 header {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.2)
-    ),
+      rgba(0, 0, 0, 0.2)),
     url("assets/header.jpg");
   background-position: center center;
   background-size: cover;
@@ -272,9 +270,7 @@ nav {
   padding-block: 5rem;
   display: grid;
   grid-template-columns:
-    minmax(0, 1fr)
-    minmax(0, var(--max-width))
-    minmax(0, 1fr);
+    minmax(0, 1fr) minmax(0, var(--max-width)) minmax(0, 1fr);
   row-gap: 2rem;
 }
 
@@ -748,18 +744,45 @@ nav {
 }
 
 /*=============== SPONSOR ===============*/
+.sponsor__section{
+  background-color: #71717a;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+  padding: 4rem 1rem;  
+}
+
+.sponsor__section .section__header{
+  color: #ffffff;
+}
 
 .sponsor__container {
-  background-color: #71717a;
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   row-gap: 5rem;
   display: flex;
   justify-items: center;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .sponsor__img {
   padding: 20px;
-  width: 150px;
+  width: 200px;
 }
+
+/*=============== SLIDES ===============*/
+.slide__container {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.2)),
+    url("assets/sofa-1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  align-items: center;
+}
+
+/* .slide__img {
+  width: auto;
+} */
