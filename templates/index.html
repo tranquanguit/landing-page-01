@@ -268,14 +268,40 @@
     </div>
   </section>
 
-  <section class="sponsor__section" id="sponsor">
+  <section class="section__container sponsor__container" id="sponsor">
     <h2 class="section__header">Đối tác của chúng tôi</h2>
-
-    <div class="sponsor__container container grid">
-      <img src="/static/assets/sponsor1.png" alt="" class="sponsor__img">
-      <img src="/static/assets/sponsor2.png" alt="" class="sponsor__img">
-      <img src="/static/assets/sponsor3.png" alt="" class="sponsor__img">
-      <img src="/static/assets/sponsor4.png" alt="" class="sponsor__img">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="sponsor__card">
+            <img src="/static/assets/sponsor1.png" alt="sponsor" />
+            <h4>sponsor 1</h4>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="sponsor__card">
+            <img src="/static/assets/sponsor2.png" alt="sponsor" />
+            <h4>sponsor 2</h4>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="sponsor__card">
+            <img src="/static/assets/sponsor3.png" alt="sponsor" />
+            <h4>sponsor 3</h4>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="sponsor__card">
+            <img src="/static/assets/sponsor4.png" alt="sponsor" />
+            <h4>sponsor 3</h4>
+          </div>
+        </div>        
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 

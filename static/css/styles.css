@@ -473,7 +473,7 @@ nav {
 }
 
 .testimonial__card img {
-  max-width: 60px;
+  max-width: 100px;
   margin-inline: auto;
   margin-bottom: 1rem;
   border-radius: 100%;
@@ -481,13 +481,13 @@ nav {
 }
 
 .testimonial__card h4 {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: var(--text-dark);
 }
 
 .testimonial__card h5 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-light);
 }
@@ -743,38 +743,11 @@ nav {
   }
 }
 
-/*=============== SPONSOR ===============*/
-.sponsor__section{
-  background-color: #71717a;
-  justify-items: center;
-  align-items: center;
-  margin: auto;
-  padding: 4rem 1rem;  
-}
-
-.sponsor__section .section__header{
-  color: #ffffff;
-}
-
-.sponsor__container {
-  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-  row-gap: 5rem;
-  display: flex;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.sponsor__img {
-  padding: 20px;
-  width: 200px;
-}
-
 /*=============== SLIDES ===============*/
 .slide__container {
   background-image: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.2)),
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.8) ),
     url("/static/assets/sofa-1.jpg");
   background-position: center center;
   background-size: cover;
@@ -783,6 +756,33 @@ nav {
   align-items: center;
 }
 
-/* .slide__img {
-  width: auto;
-} */
+
+
+/*=============== SPONSOR ===============*/
+.sponsor__container .section__header {
+  text-align: center;
+}
+
+.sponsor__card {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.sponsor__card img {
+  background-color: #71717a;
+  max-width: fit-content;
+  height: 100px;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sponsor__card h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
